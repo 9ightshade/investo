@@ -63,7 +63,9 @@ export default function FAQSection() {
           <div className="md:col-span-2">
             <div className="space-y-1">
               {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-gray-200">
+                <div
+                  key={index}
+                  className="border-b border-gray-200 cursor-pointer">
                   <button
                     className="w-full py-6 flex justify-between items-center text-left focus:outline-none"
                     onClick={() => toggleQuestion(index)}>
@@ -73,7 +75,7 @@ export default function FAQSection() {
                     <span className="ml-6 flex-shrink-0">
                       {openQuestion === index ? (
                         <svg
-                          className="h-6 w-6 text-gray-500"
+                          className="h-6 w-6 text-gray-500 cursor-pointer"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
@@ -86,7 +88,7 @@ export default function FAQSection() {
                         </svg>
                       ) : (
                         <svg
-                          className="h-6 w-6 text-gray-500"
+                          className="h-6 w-6 text-gray-500 cursor-pointer"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor">
