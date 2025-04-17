@@ -1,10 +1,7 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 
 export default function TrustedBySection() {
-  const [isHovered, setIsHovered] = useState(false);
-
   const companiesTop = [
     { name: "Google", src: "/google.png" },
     { name: "Siemens", src: "/siemens.png" },

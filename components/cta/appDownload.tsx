@@ -3,14 +3,13 @@ import React from "react";
 
 export default function AppDownloadSection() {
   return (
-    <section className="bg-gray-100 py-16" 
-    style={{
-        backgroundImage:"url('/ctabg.png')",
-        backgroundRepeat:"no-repeat",
-        backgroundPosition:"center"
-    }}
-    
-    >
+    <section
+      className="bg-white py-16"
+      style={{
+        backgroundImage: "url('/ctabg.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+      }}>
       <div className="container mx-auto px-4">
         <div className="bg-gray-900 rounded-3xl py-16 px-6 text-center max-w-6xl mx-auto">
           <div className="max-w-3xl mx-auto">
@@ -31,7 +30,12 @@ export default function AppDownloadSection() {
                 href="#"
                 className="bg-white text-black flex items-center justify-center rounded-full py-3 px-6 w-64">
                 <div className="mr-3">
-                 <Image src="/googleplay.png" alt="google play" width={30} height={30} />
+                  <Image
+                    src="/googleplay.png"
+                    alt="google play"
+                    width={30}
+                    height={30}
+                  />
                 </div>
                 <div className="text-left">
                   <div className="text-xs">GET IT ON</div>
@@ -44,7 +48,12 @@ export default function AppDownloadSection() {
                 href="#"
                 className="bg-white text-black flex items-center justify-center rounded-full py-3 px-6 w-64">
                 <div className="mr-3">
-                 <Image src="/applestore.png" alt="apple store" width={30} height={30} />
+                  <Image
+                    src="/applestore.png"
+                    alt="apple store"
+                    width={30}
+                    height={30}
+                  />
                 </div>
                 <div className="text-left">
                   <div className="text-xs">Download on the</div>

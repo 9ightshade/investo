@@ -11,7 +11,11 @@ export default function NavBar() {
 
       <ul className="flex items-center text-white justify-between gap-12">
         {navItems.map((item) => (
-          <li className="hover:text-[#D1F701] hover:underline cursor-pointer" key={item}>{item}</li>
+          <li
+            className="hover:text-[#D1F701] hover:underline cursor-pointer"
+            key={item}>
+            {item}
+          </li>
         ))}
       </ul>
 
