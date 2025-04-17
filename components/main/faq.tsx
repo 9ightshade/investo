@@ -67,7 +67,7 @@ export default function FAQSection() {
                   key={index}
                   className="border-b border-gray-200 cursor-pointer">
                   <button
-                    className="w-full py-6 flex justify-between items-center text-left focus:outline-none"
+                    className="w-full py-6 flex justify-between cursor-pointer items-center text-left focus:outline-none"
                     onClick={() => toggleQuestion(index)}>
                     <span className="text-lg font-medium text-gray-900">
                       {faq.question}

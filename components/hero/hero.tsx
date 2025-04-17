@@ -3,14 +3,14 @@ import NavBar from "../nav/navBar";
 export default function HeroSection() {
   return (
     <div
-      className="w-full h-screen bg-cover bg-no-repeat"
+      className="w-full bg-cover bg-no-repeat relative"
       style={{
         backgroundImage: " url('/bgline.png')",
         backgroundSize: "cover",
         backgroundPosition: " center",
         backgroundRepeat: " no-repeat",
       }}>
-      <section className="bg-[#F3F3F5]  px-4 text-center space-y-12 ">
+      <section className="  px-4 text-center space-y-12 ">
         <NavBar />
         {/* Top badge */}
         <div className="inline-flex items-center gap-2 bg-[#E9E9E9] rounded-full px-4 py-2 mt-14 hover:animate-bounce transition-all duration-100 cursor-pointer mb-10 shadow-sm">
@@ -44,20 +44,22 @@ export default function HeroSection() {
         </div>
 
         {/* image - showing at the bottom background */}
-        {/* <div className="mt-12 max-w-6xl h-56 mx-auto w-[70%]
-        
-        "
-        style={{
-          backgroundImage:
-          " url('/herobgbottom.png')",
-        backgroundSize: "cover",
-        backgroundPosition: " center",
-        backgroundRepeat: " no-repeat",
-        }}
-        
-        >
-        <Image src="/iphone.png" alt="#"  layout="fill" />
-        </div> */}
+        <div className="w-[30%]  mx-auto">
+          <Image
+            src="/herobgbottom.png"
+            alt="#"
+            width={826}
+            height={263}
+            className="absolute bottom-0 right-[20%]"
+          />
+          <Image
+            src="/iphone.png"
+            alt="#"
+            width={378}
+            height={780}
+            className="object-cover"
+          />
+        </div>
       </section>
     </div>
   );

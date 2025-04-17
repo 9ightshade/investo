@@ -3,44 +3,15 @@ import React from "react";
 
 export default function AppDownloadSection() {
   return (
-    <section
-      className="bg-white py-16"
-     >
+    <section className="bg-white py-16">
       <div className="container mx-auto px-4">
-        <div className="bg-[#171717] relative overflow-hidden rounded-3xl py-16 px-6 text-center max-w-6xl mx-auto"
-         style={{
-          backgroundImage: "url('/ctabg.png')",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-        }}
-        >
-          {/* Grid overlay - using pseudo-element with custom styling */}
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              backgroundImage: `
-              linear-gradient(rgba(255, 255, 255, 0.1) 2px, transparent 2px),
-              linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 2px)
-            `,
-              backgroundSize: "40px 40px",
-            }}></div>
-
-          {/* Vignette/gradient overlay */}
-          <div
-            className="absolute inset-0 opacity-70"
-            style={{
-              background:
-                "radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.5) 100%)",
-            }}></div>
-
-          {/* Light highlight in corner */}
-          <div
-            className="absolute top-0 left-0 w-full h-full opacity-10"
-            style={{
-              background:
-                "radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.3) 0%, transparent 60%)",
-            }}></div>
-
+        <div
+          className="bg-[#171717] relative overflow-hidden rounded-3xl py-16 px-6 text-center max-w-6xl mx-auto"
+          style={{
+            backgroundImage: "url('/ctabg.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}>
           <div className="max-w-3xl mx-auto">
             <h2 className="text-white text-4xl sm:text-5xl font-bold mb-6">
               Download Our App Free and Enjoy Exclusive Features!
