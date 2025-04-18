@@ -3,26 +3,30 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#F0F0F2] py-12 px-6">
+    <footer className="bg-[#F0F0F2] py-12 px-4 sm:px-6">
       <div className="container mx-auto max-w-6xl">
-        <div className="flex justify-between items-start gap-8">
+        <div className="flex flex-col lg:flex-row justify-between gap-8">
           {/* First column - Logo and Subscribe */}
-          <div className="col-span-4 md:col-span-1">
+          <div className="w-full lg:w-1/3">
             <div className="flex items-center mb-6">
               <div className="h-6 w-6 rounded-sm mr-2">
-                <Image src="/logo1.png" alt="#" width={28} height={28} />
+                <Image
+                  src="/logo1.png"
+                  alt="Investo Logo"
+                  width={28}
+                  height={28}
+                  priority
+                />
               </div>
               <span className="text-xl font-semibold">Investo</span>
             </div>
-
             <div className="mb-6">
               <h3 className="font-semibold mb-2">Subscribe</h3>
               <p className="text-sm text-gray-600 mb-4">
                 Join our newsletter to stay up to date on features and releases.
               </p>
-
-              <div className="flex mb-2 bg-[#FFFFFF] rounded-[100px]">
-                <div className="relative flex-grow">
+              <form className="flex flex-col sm:flex-row mb-2 bg-white py-3  px-4 rounded-full">
+                <div className="relative flex-grow w-full sm:w-auto">
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">
                     <Image
                       src="/email.png"
@@ -34,17 +38,22 @@ export default function Footer() {
                   <input
                     type="email"
                     placeholder="Enter your email"
-                    className="pl-12 w-full px-4 py-4 outline-none text-[#595959] text-sm"
+                    className="pl-12 w-full px-4 py-4 outline-none text-[#595959] text-sm bg-white  rounded-[100px] sm:rounded-r-none"
+                    required
+                    aria-label="Email address"
                   />
                 </div>
-                <button className="ml-2 bg-[#171717] rounded-[100px] hover:underline hover:text-[#D1F701] cursor-pointer text-white px-8 py-3.5 text-sm">
+                <button
+                  type="submit"
+                  className="mt-2 sm:mt-0 bg-[#171717] rounded-[100px] sm:rounded-full hover:bg-[#2a2a2a] transition-colors duration-300 hover:text-[#D1F701] cursor-pointer text-white px-6 py-3.5 text-sm w-full sm:w-auto">
                   Subscribe
                 </button>
-              </div>
-
+              </form>
               <p className="text-xs text-gray-500 mt-2">
                 By subscribing you agree to with our{" "}
-                <a href="#" className="underline">
+                <a
+                  href="#"
+                  className="underline hover:text-[#171717] transition-colors duration-300">
                   Privacy Policy
                 </a>
               </p>
@@ -52,29 +61,37 @@ export default function Footer() {
           </div>
 
           {/* Second, Third, and Fourth columns */}
-          <div className="col-span-4 md:col-span-3">
-            <div className="grid grid-cols-3 gap-8">
+          <div className="w-full lg:w-2/3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               {/* Quick Links Section */}
-              <div>
+              <div className="mb-6 sm:mb-0">
                 <h3 className="font-semibold mb-4">Quick Links</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       About
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Services
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Contact
                     </a>
                   </li>
@@ -82,26 +99,34 @@ export default function Footer() {
               </div>
 
               {/* Products Section */}
-              <div>
+              <div className="mb-6 sm:mb-0">
                 <h3 className="font-semibold mb-4">Products</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       AI Assistant
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Mobile App
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Account
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Credit Card
                     </a>
                   </li>
@@ -113,22 +138,30 @@ export default function Footer() {
                 <h3 className="font-semibold mb-4">Company</h3>
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       About
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Support
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-600 hover:text-gray-900">
+                    <a
+                      href="#"
+                      className="text-gray-600 hover:text-[#171717] transition-colors duration-300">
                       Terms of Service
                     </a>
                   </li>
@@ -139,14 +172,16 @@ export default function Footer() {
         </div>
 
         {/* Copyright and Social Media */}
-        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm text-gray-600 mb-4 md:mb-0">
+        <div className="mt-12 pt-6 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-center">
+          <div className="text-sm text-gray-600 mb-6 sm:mb-0 text-center sm:text-left">
             Copyright © 2025 Investo. All Rights Reserved
           </div>
-
           <div className="flex space-x-6">
             {/* Facebook */}
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-[#171717] transition-colors duration-300"
+              aria-label="Facebook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -161,7 +196,10 @@ export default function Footer() {
               </svg>
             </a>
             {/* Twitter */}
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-[#171717] transition-colors duration-300"
+              aria-label="Twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -176,7 +214,10 @@ export default function Footer() {
               </svg>
             </a>
             {/* Instagram */}
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-[#171717] transition-colors duration-300"
+              aria-label="Instagram">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -193,7 +234,10 @@ export default function Footer() {
               </svg>
             </a>
             {/* YouTube */}
-            <a href="#" className="text-gray-600 hover:text-gray-900">
+            <a
+              href="#"
+              className="text-gray-600 hover:text-[#171717] transition-colors duration-300"
+              aria-label="YouTube">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
