@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           {/* First column - Logo and Subscribe */}
-          <div className="w-full lg:w-1/3">
+          <div className=" ">
             <div className="flex items-center mb-6">
               <div className="h-6 w-6 rounded-sm mr-2">
                 <Image
@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
                 <button
                   type="submit"
-                  className="mt-2 sm:mt-0 bg-[#171717] rounded-[100px] sm:rounded-full hover:bg-[#2a2a2a] transition-colors duration-300 hover:text-[#D1F701] cursor-pointer text-white px-6 py-3.5 text-sm w-full sm:w-auto">
+                  className="mt-2 sm:mt-0 bg-[#171717] rounded-[100px] sm:rounded-full hover:bg-[#2a2a2a] transition-colors duration-300 hover:text-[#D1F701] cursor-pointer text-white px-10 py-3.5 text-sm w-full sm:w-auto">
                   Subscribe
                 </button>
               </form>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
 
           {/* Second, Third, and Fourth columns */}
-          <div className="w-full lg:w-2/3">
+          <div className="">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
               {/* Quick Links Section */}
               <div className="mb-6 sm:mb-0">
