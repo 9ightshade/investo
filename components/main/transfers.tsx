@@ -59,7 +59,7 @@ export default function InternationalTransfers() {
 
               <a
                 href="#"
-                className="inline-block bg-gray-900 text-white font-medium py-3 px-8 rounded-full hover:bg-gray-800 transition-colors">
+                className="inline-block bg-gray-900 text-white font-medium py-3 px-8 rounded-full hover:bg-[#5945FD] transition-colors">
                 Get Started
               </a>
             </div>

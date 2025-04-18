@@ -47,7 +47,7 @@ export default function GetStarted() {
 
   return (
     <div id="get-started-section" className="w-full bg-white py-12 md:py-16">
-      <div className="flex flex-col lg:flex-row items-center w-[90%] lg:w-[80%] mx-auto">
+      <div className="flex flex-col lg:flex-row items-center gap-8 w-[90%] lg:w-[80%] mx-auto">
         <section className="py-8 md:py-16 bg-white flex-1 order-2 lg:order-1">
           <div className="container mx-auto px-4 max-w-6xl">
             <div
