@@ -107,7 +107,7 @@ export default function GetStarted() {
               alt="Mobile application showcase"
               width={576}
               height={983}
-              className="object-contain"
+              className="object-contain hidden md:block"
               priority
             />
           </div>

@@ -74,7 +74,7 @@ export default function InternationalTransfers() {
             alt="transfers"
             width={633}
             height={487}
-            className="rounded-[40px] "
+            className="rounded-[40px] hidden md:block "
           />
         </div>
       </div>
